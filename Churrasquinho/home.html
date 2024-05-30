@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    
+    
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/output.css">
+    <title>Churras dos Devs</title>
+</head>
+<body>
+    <!-- HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center" >
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="img/logo dev.png" alt="Logo Churrasquinho" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" >
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Churras dos Devs</h1>
+
+        <span class="text-white font-medium"> Rua Dev 20, Centro Food - DF</span>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Seg á Sab - 08:00 ás 23:00</span>
+        </div>
+        </div>
+        
+        
+    </header>
+    <!-- FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6"> Conheça nosso Cardapio</h2>
+
+    <!--Inicio Menu-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+           
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/camarao.png" alt="Porção de Camarão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Porção de Camarão</p>
+                    <p class="text-sm">A porção de camarão combina camarões frescos, selecionados cuidadosamente, com uma mistura equilibrada de temperos, como alho, pimenta-do-reino, sal marinho e ervas frescas. Essa fusão de ingredientes realça o sabor natural dos camarões,uma experiência culinária memorável.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 60.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Camarao" data-price="60.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/bolinho de bacalhau.png" alt="bolinho de bacalhau" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Bolinho de Bacalhau</p>
+                    <p class="text-sm">A porção de bolinho de bacalhau apresenta uma mistura saborosa de bacalhau desfiado e batatas, temperada com cebola, alho, salsa e pimenta. Cada bolinho é frito até ficar crocante por fora e macio por dentro, proporcionando uma experiência gastronômica irresistível.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 35.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Bolinho de Bacalhau" data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/file de frango.png" alt="file de frango" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">File de Frango</p>
+                    <p class="text-sm">Um espetinho de filé de frango é uma delícia simples e saborosa. Cubos de frango são temperados com alho, páprica, cominho e ervas frescas, espetados em palitos e grelhados até ficarem dourados e suculentos. O resultado é um petisco irresistível, cheio de sabor em cada mordida.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 7.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="File de Frango" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/coxao mole.png" alt="Hamburguer smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Coxão Mole</p>
+                    <p class="text-sm">O espetinho de coxão mole é uma carne macia temperada com alho, sal, pimenta e ervas frescas, espetada em palitos e grelhada até ficar suculenta por dentro e levemente crocante por fora. Um petisco irresistível, perfeito para saborear a qualquer momento.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 9.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Coxao Mole" data-price="9.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="img/picanha.png" alt="Hamburguer smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Picanha</p>
+                    <p class="text-sm">O espetinho de picanha é feito com cubos suculentos de picanha temperados com alho, sal, pimenta e ervas frescas, espetados em palitos e grelhados até ficarem dourados por fora e macios por dentro. Um deleite irresistível para os amantes de carne.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 17.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Picanha" data-price="17.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/batata-transformed.png" alt="Batata Frita" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Batata Frita</p>
+                    <p class="text-sm">A batafrita é uma porção de batatas fritas, cortadas em tiras finas ou rodelas, fritas até ficarem douradas e crocantes por fora, e macias por dentro. Servida quente, é acompanhada por molhos como ketchup, maionese ou molho de queijo, sendo um aperitivo popular em restaurantes e bares, muitas vezes apreciada como acompanhamento para hambúrgueres.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 17.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Batata Frita" data-price="17.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/tilapia-transformed.png" alt="Tilapia" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Tilapia Frita</p>
+                    <p class="text-sm">Uma porção de tilápia frita oferece uma combinação irresistível de crocância e suculência. Cada pedaço revela a textura delicada do peixe envolta em uma crosta dourada e crocante, liberando um sabor suave e levemente salgado. É uma experiência culinária simplesmente deliciosa e reconfortante.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 50.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Tilapia" data-price="50.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/cupim2.png" alt="Cupim" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cupim</p>
+                    <p class="text-sm">O espetinho de cupim é uma iguaria que combina suculência e sabor. Cada pedaço revela a maciez característica do cupim, marinado e grelhado a ponto de liberar um aroma irresistível. A carne, tenra e suculenta, é servida em espetos, garantindo uma experiência deliciosa e memorável em cada mordida.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 10.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Cupim" data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/medalhao-transformed.png" alt="Medalhao" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Medalhao de Frango</p>
+                    <p class="text-sm">O espetinho de medalhão combina a suculência da carne com o charme e praticidade dos espetinhos. Cada pedaço é temperado e grelhado até atingir o ponto ideal, proporcionando uma explosão de sabor. Com vegetais frescos e acompanhamentos saborosos, é uma opção irresistível para uma experiência gastronômica autêntica e reconfortante.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 10.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Medalhao de Frango" data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/asa-transformed.png" alt="Asa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Asa de Frango</p>
+                    <p class="text-sm">O espetinho de asa de frango é uma opção saborosa e prática para os amantes de frango. Cada pedaço é marinado em temperos que realçam seu sabor, resultando em uma textura crocante por fora e suculenta por dentro ao ser grelhado. É um petisco perfeito para compartilhar, podendo ser acompanhado de molhos especiais ou saladas frescas, oferecendo uma experiência gastronômica memorável.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Asa de Frango" data-price="8.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--fim do Produto-->
+
+            <div class="flex gap-2">
+                <img src="img/carne_de_sol-transformed.png" alt="Carne de Sol" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Carne de Sol</p>
+                    <p class="text-sm">O espetinho de carne de sol é uma iguaria regional brasileira, preparada com pedaços suculentos de carne de sol grelhada lentamente. Com um sabor rico e defumado, é uma delícia acompanhada de mandioca, queijo coalho e vinagrete, perfeita para qualquer ocasião festiva ou churrasco entre amigos.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 10.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Carne de Sol" data-price="10.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+             <!--fim do Produto-->
+
+             <div class="flex gap-2">
+                <img src="img/coalho-transformed.png" alt="Queijo Coalho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Queijo Coalho</p>
+                    <p class="text-sm">O espetinho de queijo coalho é uma opção simples e saborosa. O queijo coalho é cortado em pedaços e grelhado até ficar levemente dourado por fora e derretido por dentro, resultando em uma textura cremosa e um sabor levemente salgado. Com sua praticidade e irresistível sabor, é um sucesso garantido em qualquer churrasco ou evento, servido como petisco ou acompanhamento.</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Queijo Coalho" data-price="8.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+        <br>
+        <!--Grid Bebidas-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/refri-1.png" alt="Coca" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Coca-cola</p>
+
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 5.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Coca" data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/refri-2.png" alt="Guarana" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Guarana</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 5.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Guarana" data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/copo_de_laranja-transparente.png" alt="Suco de Laranja" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Suco de Laranja</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 7.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Suco de Laranja" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/bebida_ice-removebg.png" alt="Ice" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Ice 51</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 7.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Ice 51" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./img/copo_de_limao-removebg.png" alt="Suco de Limao" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Suco de Limão</p>
+                    <div class="flex items-center gap-3 justify-between mt-4">
+                        <p class="font-bold">R$ 8.00</p>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn" data-name="Suco de Limao" data-price="8.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--fim do Produto-->
+        </div>
+        <!--Fim da Grid Bebidas-->
+    </div>
+    <!--Fim da Menu-->
+
+    <!--Modal Cart-->
+    <div class="bg-black/70 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Valor: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereço de Entrega:</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!⚠️</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!--fim do Modal Cart-->
+
+    <!--Button Footer-->
+    <footer class="w-full bg-red-950 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!--Fim Button Fotter-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
