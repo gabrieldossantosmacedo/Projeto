@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="Churrasquinho/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <title>Churras dos Devs</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(Churrasquinho/img/caramelizada.png);
+            background-image: url(img/caramelizada.png);
             background-size: cover;
             
         }
@@ -83,9 +83,9 @@
 <body>
     <div>
         <fieldset>
-            <legend><img src="Churrasquinho/img/churras-removebg-preview.png" alt="dev"></legend>
+            <legend><img src="img/churras-removebg-preview.png" alt="dev"></legend>
             <h1>Bem-Vindo</h1><br>
-            <form action="Churrasquinho/testelogin.php" method="POST">
+            <form action="testelogin.php" method="POST">
                 <input type="text" name="email" placeholder="Email">
                 <br><br>
                 
@@ -93,7 +93,7 @@
                 <br><br>
                 <input class="inputSubmit" type="submit" name="submit" value="Entrar">
             </form>
-            <p>Não tem cadastro? Clique aqui:<a href="Churrasquinho/cadastro.php">Cadastro de Novos Devs</a></p> 
+            <p>Não tem cadastro? Clique aqui:<a href="cadastro.php">Cadastro de Novos Devs</a></p> 
         </fieldset>
     </div>
 
